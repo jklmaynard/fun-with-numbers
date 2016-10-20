@@ -1,23 +1,26 @@
 var collatz = function (num) {
   if (num === 1) {
-    return console.log(num + ' is the loneliest number')
+    return
   } else if (num % 2 === 0) {
     return num/2
   } else if (num % 2 !== 0) {
     return (num*3)+1;
   }
 };
+
 var conjecture = function (num) {
-  var x = num
+  var x = num;
+  var arr = [];
   while (x !== 1) {
     if (x === num) {
       x = collatz(num)
+      arr.push(x);
     } else {
       x = collatz(x)
+      arr.push(x);
     }
-    console.log(x);
   }
-  console.log(x + ' is the lonelinest number');
+  return arr;
 };
 
 $(document).ready(function() {
@@ -26,9 +29,15 @@ $(document).ready(function() {
     $(window).scrollTop(y + 800);
   });
   $('.collatz-number-scroll').click(function() {
-    var num = $('#collatz-number').val();
-    conjecture(num);
-    var y = $(window).scrollTop();
+    var num, y, arr;
+    num = $('#collatz-number').val();
+    arr = conjecture(num);
+    y = $(window).scrollTop();
     $(window).scrollTop(y + 800);
-  })
+    if (arr.length < 10) {
+      arr.forEach(function(index) {
+        $('#conjecture-array-container').append('<div class="col-md-1">' + index + '</div>');
+      });
+    }
+  });
 });

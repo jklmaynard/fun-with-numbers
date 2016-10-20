@@ -20,6 +20,10 @@
       background-color: purple;
       min-height: 800px;
     }
+    #conjecture-array-container {
+      display: flex;
+      flex-direction: row;
+    }
 }
 /**********STYLES FOR MOBILE************/
 @media (max-width: 500px) {
