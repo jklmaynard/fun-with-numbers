@@ -23,6 +23,7 @@
     #conjecture-array-container {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
     }
 }
 /**********STYLES FOR MOBILE************/

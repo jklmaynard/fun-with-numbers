@@ -34,11 +34,9 @@ $(document).ready(function() {
     arr = conjecture(num);
     y = $(window).scrollTop();
     $(window).scrollTop(y + 800);
-    if (arr.length < 10) {
-      arr.forEach(function(index) {
-        var index_num = arr.indexOf(index);
-        $('#conjecture-array-container').append("<div class='col-md-1' id='array-index-number-" + index_num + ">'" + index + "</div>");
-      });
-    }
+    arr.forEach(function(index) {
+      var index_num = arr.indexOf(index);
+      $('#conjecture-array-container').append("<div class='col-md-1' id='array-index-number-" + index_num + "''>" + index + "</div>");
+    });
   });
 });
