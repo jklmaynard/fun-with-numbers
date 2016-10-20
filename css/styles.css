@@ -1,0 +1,45 @@
+/**********STYLES FOR DESKTOP************/
+@media (min-width: 501px) {
+    .container-fluid {
+      display: flex;
+      flex-direction: column;
+    }
+    #intro {
+      background-color: blue;
+      min-height: 800px;
+    }
+    #number {
+      background-color: red;
+      min-height: 800px;
+    }
+    #conjectureflow1 {
+      background-color: orange;
+      min-height: 800px;
+    }
+    #conjectureflow2 {
+      background-color: purple;
+      min-height: 800px;
+    }
+}
+/**********STYLES FOR MOBILE************/
+@media (max-width: 500px) {
+  .container-fluid {
+    display: flex;
+    flex-direction: column;
+  }
+  #intro {
+    background-color: red;
+  }
+
+  #number {
+    background-color: blue;
+  }
+
+  #conjectureflow1 {
+    background-color: purple;
+  }
+
+  #conjectureflow2 {
+    background-color: orange
+  }
+}

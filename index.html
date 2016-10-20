@@ -9,9 +9,24 @@
     <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="">
+    <div class="container-fluid">
+      <div id="intro" class="col-md-12">
         <h1>Hello World!</h1>
+        <button type="button" name="button" class="scroll">Click to Scroll</button>
+      </div>
+      <div class="col-md-12" id="number">
+        <h1>Input Number Here</h1>
+        <form id="collatz-conjecture-form">
+          <label>Number:</label><br>
+          <input type="number" id="collatz-number" placeholder="Any Number"><br><br>
+        </form>
+        <button class="collatz-number-scroll">Find Out!</button>
+      </div>
+      <div class="col-md-12" id="conjectureflow1">
+        <h1>Conjecture Flow 1</h1>
+      </div>
+      <div class="col-md-12" id="conjectureflow2">
+        <h1>Conjecture Flow 2</h1>
       </div>
     </div>
   </body>
