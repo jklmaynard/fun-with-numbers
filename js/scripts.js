@@ -45,6 +45,9 @@ $(document).ready(function() {
   // Click event for calculation and population
   $('.collatz-number-scroll').click(function() {
     num = $('#collatz-number').val();
+    if (num.length === 0) {
+      return false;
+    }
     arr = conjecture(num);
     $('body').animate({ scrollTop: $("#conjectureflow1").offset().top }, 1000);
     // Run thrugh array, adding a number div and appending to #conjecture-array-container

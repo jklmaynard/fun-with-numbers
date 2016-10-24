@@ -1,16 +1,29 @@
 /**********STYLES FOR DESKTOP************/
 @media (min-width: 501px) {
+
+    p, li {
+      font-size: 20px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
     .container-fluid {
       display: flex;
       flex-direction: column;
     }
     #intro {
-      background-color: blue;
-      /*height: 800px;*/
+      background-color: #fff;
     }
     #number {
-      background-color: red;
-      height: 800px;
+      background-color: #ffa;
+      text-align: center;
+    }
+    #collatz-number {
+      height: 50px;
+      text-align: center;
+      width: 400px;
     }
     #conjectureflow1 {
       background-color: orange;
