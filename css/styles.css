@@ -6,24 +6,35 @@
     }
     #intro {
       background-color: blue;
-      min-height: 800px;
+      /*height: 800px;*/
     }
     #number {
       background-color: red;
-      min-height: 800px;
+      height: 800px;
     }
     #conjectureflow1 {
       background-color: orange;
-      min-height: 800px;
-    }
-    #conjectureflow2 {
-      background-color: purple;
       min-height: 800px;
     }
     #conjecture-array-container {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    #refresh-div {
+      margin: 10px 0px 10px 0;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+    .number-container {
+      background-color: white;
+      margin: 15px;
+      min-height: 75px;
+      text-align: center;
+    }
+    .refresh-button {
+      text-align: center;
     }
 }
 /**********STYLES FOR MOBILE************/
