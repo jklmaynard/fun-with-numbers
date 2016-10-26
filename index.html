@@ -6,51 +6,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
-    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <div class="container-fluid">
-      <div id="intro" class="col-md-12">
-        <h1>The Collatz Conjecture</h1>
-        <div class="col-md-12">
-          <p>
-            The Collatz Conjecture states that by seletcing any number <i>n</i>, and by applying <i>n</i>/2 if even or (<i>n</i> X 3) + 1 if odd, and applying the same logic to whatever the product was of subsequent numbers, this final number will always equal 1.<br>
-            For example: Take the number 3:
-          </p>
-          <ul>
-            <li>10 &rarr; (3 * 3) + 1 = 10</li>
-            <li>&nbsp;5 &nbsp;&rarr; 10 / 2 = 5</li>
-            <li>16 &rarr; (5 * 3) + 1 = 16</li>
-            <li>&nbsp;8 &nbsp;&rarr; 16 / 2 = 8</li>
-            <li>&nbsp;4 &nbsp;&rarr; 8 / 2 = 4</li>
-            <li>&nbsp;2 &nbsp;&rarr; 4 / 2 = 2</li>
-            <li>&nbsp;1 &nbsp;&rarr; 2 / 2 = 1</li>
-          </ul>
-          <p>
-            You can apply this conjecture to <i>many</i> numbers, and the answer will always equal one.  I've put together a short little site for you to try.  Click the button to give it a go!
-          </p>
-        </div>
-        <div class="col-md-12" id="scroll-button-container" style="padding-top:15px; text-align:center;">
-          <button type="button" name="button" class="scroll" style="">Start</button>
-        </div>
-      </div>
-      <div class="col-md-12" id="number">
-        <form id="collatz-conjecture-form">
-          <h1>Any Number</h1>
-          <div class="col-md-12" id="number-input-div">
-            <input type="number" id="collatz-number" placeholder="Enter a Number"><br><br>
-          </div>
-        </form>
-        <button class="collatz-number-scroll">Find Out!</button>
-      </div>
-      <div class="col-md-12" id="conjectureflow1">
-        <h1>Conjecture Flow 1</h1>
-        <div class="col-md-12" id="conjecture-array-container">
-        </div>
-      </div>
-      <div class="col-md-12" id="refresh-div" style="text-align:center;">
-        <button class="refresh-button">Start Over</button>
-      </div>
+    <div class="container">
+      <h2><a href="collatz.html">Collatz Conjecture</a></h2>
     </div>
   </body>
 </html>
