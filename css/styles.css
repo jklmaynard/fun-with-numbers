@@ -1,6 +1,11 @@
 /**********STYLES FOR DESKTOP************/
 @media (min-width: 501px) {
 
+    a, a:hover {
+      color: #000;
+      text-decoration: none;
+    }
+
     p, li {
       font-size: 20px;
     }
